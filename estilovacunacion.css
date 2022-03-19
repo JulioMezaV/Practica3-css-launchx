@@ -1,0 +1,340 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.contenedorheader{
+    position:fixed;
+    display:flex;
+    background-color: rgba(146, 138, 138, 0.63);
+    height: 60px;
+    width: 100%;
+    z-index:1;
+
+}
+.divcontenedor{
+    display:flex;
+    position: fixed;
+    justify-content: center;
+    gap:10px;
+    left:45%; 
+    height: 50px;
+    width: 55%;
+    text-align: center;
+    padding: 3px;
+}
+div#titulovacunacion{
+    /*background-color: aqua;*/
+    position: relative;
+    left:5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+   
+    
+}
+a#titulo{
+    color:rgb(3, 3, 173);
+}
+
+/*formatos de hiperviculos del header*/
+a{
+    
+    padding: 13px;
+    text-decoration: none;
+    color:black;
+}
+/*estilos para los boxflex de los hipervinculos en el header*/
+.botonesheader{
+    
+    padding-top: 16px; 
+}
+
+.botonesheader > a:hover{
+    background-color: blue;
+ color:white;
+ border-radius: 10%;
+}  
+/*terminan estilos del header*/
+/*contenedor de flexbox*/
+.contenedorprimertexto{
+    top:0px;
+    right:5px;
+    display:flex;
+    flex-direction: row;
+    color:rgb(3, 3, 173);
+    
+
+} 
+
+.imagenfondo1{
+   
+    background-image: url(./imagenes/vacunacionimg1.jpg);
+    background-size:cover;
+    height: 700px;
+    width: 650px;
+    
+
+}
+.textoizquierda{
+    position: relative;
+    height: 700px;
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+}
+h2 h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.parrafos1{
+position: absolute;
+bottom:40%;
+font-family: Arial, Helvetica, sans-serif;
+width: 50%;
+left: 130px;
+}
+
+.formularios{
+    position: absolute;
+    bottom:25px;
+    left:30%;
+    width: 490px;
+    height: 100px;
+    background-color:white;
+}
+.contenedorform{
+   
+    display:flex;
+    width: 100%;
+    
+    align-items: center;
+
+}
+input{
+    width:100px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input#botonsubmit{
+    height: 40px;
+    background-color: blue;
+    border-color: blue;
+    color:white;
+    font-weight: bold;
+}
+.elementosform{
+    
+    width: 200px;
+}
+.elementosform > label{
+    font-weight: bold;
+}
+/*estilos segunda seccion*/
+.bannervacunas{
+    background-image: url("./imagenes/vacuna.png");
+    background-size:contain;
+height: 300px;
+width:95%;
+}
+.contenedorsegu{
+    display:flex;
+    flex-direction: column;
+    height: 500px;
+    margin-left: 50px;
+   
+}
+.encabezadosegu{
+    width:100%;
+    height: 200px;
+    margin-top: 90px;
+    color:rgb(3, 3, 173);
+    text-align: justify;
+}
+.encabezadosegu h2{
+    font-size:48px;
+}
+.encabezadosegu p{
+    font-size: 18px;
+}
+.contenedorbene{
+    
+    display:flex;
+    position:relative;
+    flex-direction:row;
+    color:rgb(3, 3, 173);
+    gap:50px;
+    height: 200px;
+    
+}
+.sombra{
+    overflow: auto;
+    padding: 10px;
+    width: 250px;
+}
+.sombra:hover{
+    /*orden de box-shadow desplasamiento en x, desplazamiento en y, blur o gausiano, añadir pixeles al tamaño original, color */
+    box-shadow: -5px 3px 10px 5px rgba(5, 5, 41, 0.404);
+    border-radius: 10%;
+}
+.sombra p{
+    text-align:justify;
+    margin: 5px;
+}
+.sombra h3{
+    margin:3px;
+}
+/*estilos tercera seccion */
+.contenedorTercerpagina{
+    display:flex;
+}
+.imagenfondo2{
+    background-image: url(./imagenes/vacunacionimg2.jpg);
+    height: 700px;
+    width: 650px;
+    background-size: cover;
+}
+.parrafoderecha{
+    background-color: white;
+    height: 700px;
+    width: 650px;
+    display:flex;
+    flex-direction: column;
+}
+.encabezado{
+    color:blue;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.textohiper{
+    visibility: hidden;
+}
+.sombra2{
+    margin-left: 50px;
+    margin-bottom:20px ;
+    padding: 3px;
+    width: 350px;
+    color:blue;
+}
+.sombra2:hover{
+    box-shadow: -5px 3px 10px 5px rgba(5, 5, 41, 0.404);
+    border-radius: 5%;
+}
+.sombra2:hover >.textohiper{
+    visibility: visible;
+}
+.alineartitulo{
+    display: inline-flex;
+    gap:5px;
+}
+.alineartitulo> h3{
+    line-height: 30px;
+    color: blue;
+}
+/*Estilos para tercer seccion*/
+.cuartocontenedorseccion{
+    display:flex;
+
+}
+.cuartotextoizquierda{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height:700px;
+}
+.encabezadoemergencia{
+    color: blue;
+    height: 200px;
+    font-size: large;
+    margin-top: 20px;
+}
+.contactos{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap:50px
+}
+.contactoico{
+    padding: 20px;
+    width: 250px;
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: -3px 3px 15px 5px rgba(107, 104, 104, 0.733);
+}
+.alineartitulo2{
+    display:flex;
+    gap:5px;
+}
+.alineartitulo2 h3{
+color:blue;
+
+}
+.alineartitulo2 p{
+    color: blue;
+    font-size: 10px;
+}
+.contactoicoboton{
+    margin-left: 10px;
+    margin-top: 20px;
+    height:50px;
+    
+    background-color: rgba(169, 218, 250, 0.692);
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    line-height:50px;
+}
+.contactoicoboton a{
+    font-size: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.contactoicoboton:hover >a{
+    background-color: blue;
+    color: white;
+}
+
+.imagenfondocuarto{
+    height:500px;
+    width:650px;
+    background-image: url("./imagenes/phone-call640.jpg");
+    background-size:cover;
+    align-self:flex-end;
+}
+/*estilos footer*/
+.contenedorfooter{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    height: 300px;
+    background-color: rgba(183, 210, 247, 0.37);
+}
+.cajasfooter{
+    width:50%;
+    text-align: center;
+    color: blue;
+    padding-top: 50px;
+}
+.cajasfooter h2{
+    padding: 30px;
+}
+.contenedorcajafoot{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    color: blue;
+    height: 100px;
+    padding-top: 50px;
+}
+.contenedorcajafoot h2{
+    padding: 30px;
+}
+
+.hipervinfoot a{
+    color:blue;
+   
+   
+}
